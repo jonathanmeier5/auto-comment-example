@@ -9,9 +9,8 @@
 
 name: Add comment
 on:
-  issues:
-    types:
-      - labeled
+  pull_request:
+    types: [ labeled ]
 jobs:
   add-comment:
     if: github.event.label.name == 'size:XXL''
