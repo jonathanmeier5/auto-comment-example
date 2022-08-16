@@ -13,7 +13,7 @@ on:
     types: [ labeled ]
 jobs:
   add-comment:
-    if: github.event.label.name == 'size:XXL''
+    if: github.event.label.name == 'size:XXL'
     runs-on: ubuntu-latest
     permissions:
       issues: write
